@@ -1,0 +1,6 @@
+jupyterlab-language-pack-ja-JP
+black
+jupyterlab_code_formatter
+isort
+jupyterlab-git
+jupyterlab_tabnine

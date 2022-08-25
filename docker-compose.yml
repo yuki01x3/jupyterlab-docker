@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  notebook:
+    build:
+      args: 
+        JUPYTER_IMAGE: ${JUPYTER_IMAGE:-scipy-notebook}
+        TAG: ${TAG:-latest}
+      context: .
+    restart: always
+    ports:
+      - 8888:8888
+    volumes:
+      - ./work:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
